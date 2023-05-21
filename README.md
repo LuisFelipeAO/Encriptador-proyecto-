@@ -4,12 +4,16 @@
   <img src="https://img.shields.io/badge/Status-En--desarrollo-yellow">
   <img src="https://img.shields.io/badge/release%20date-Mayo--2023-brightgreen">
 </p>
-<h3><br><br>
-  Encriptador es un proyecto creado a partir de la necesida de un cifrado de texto para
-  mandar mensajes de manera que nadie sepa de que se trata el mensaje a menos que tenga el enlace
-  a la pagina para desencriptarlo.
-  Creando un boton de copiar al momento de, ya sea, encriptar o desencriptar el texto, para facilidad al momento de enviar el mensaje.
-</h3>
+
+
+## 📝 Descripción
+
+
+Encriptador es un proyecto creado a partir de la necesida de un cifrado de texto para
+mandar mensajes de manera que nadie sepa de que se trata el mensaje a menos que tenga el enlace
+a la pagina para desencriptarlo.
+Creando un boton de copiar al momento de, ya sea, encriptar o desencriptar el texto, para facilidad al momento de enviar el mensaje.
+
 <p align="center">
   <img src="https://github.com/LuisFelipeAO/Portafolio/assets/134191584/65d15f4b-5e5f-4c8f-bf4a-305435317989">
 </p>
@@ -37,12 +41,12 @@ Puedes ejecutar nuestro proyecto en el enlace "https://luisfelipeao.github.io/Po
 - `CSS`
 - `JavaScript`
   
-## Autores 🧔
+## 🧔Autores
 
 | [<img src="https://github.com/LuisFelipeAO/Portafolio/assets/134191584/e2dc38a4-ca73-47bb-a19c-88dafdbf75d0" width=115><br><sub>Luis Aguilar</sub>](https://github.com/LuisFelipeAO) |
 | :---: |  
 
-## Contacto ☁️
+## ☁️Contacto
 Puedes contactarnos por medio de: <br>
 
 - `email` : aguilarolguinlf@gmail.com <br>
