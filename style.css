@@ -92,6 +92,7 @@ html{
     border: none;
     outline: none;
     resize: none;
+    overflow: hidden;
     font-size: 32px;
     font-style: normal;
     padding: 40px;

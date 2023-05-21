@@ -7,7 +7,7 @@ var espacioDeTexo = document.getElementById("espacio-texto");
 var boton = document.getElementById('botonCopiar');
 
 const inText = document.getElementById('textarea');
-const inTextContendo = document.getElementById('espacio-texto');
+const textarea1 = document.getElementById('espacio-texto');
 
 /*///////////////////////////////////////////////////*/
 
@@ -40,7 +40,6 @@ function desencriptar(texto) {
 
 /* Funciones capturando el click en botones */
 
-
 /*Agregamos el boton para copiar el texto desencriptado*/
 function agregarBoton() {
 
@@ -59,13 +58,10 @@ function clickEncriptar() {
         alert("no se ingresó ningun texto");
     }
     else{
-        if(isMobileDevice()){
-            /*con esto validamos el redimensionado del textarea en caso de que 
-            se abra la pagina en un movil*/
-            inTextContendo.style.height = "auto";
-            inTextContendo.style.height = inText.scrollHeight + 'px';
-        }
         encriptar(texto);
+        if(isMobileDevice()){
+            autoResize();
+        }
         cambiarOpacidad();
         var h3 = document.getElementById("mensaje-sin-texto");
         h3.remove();/*borramos el texto flotante */
@@ -80,13 +76,12 @@ function clickdesencriptar(){
         alert("no se ingresó ningun texto");
     }
     else{
-        if(isMobileDevice()){
-            /*con esto validamos el redimensionado del textarea en caso de que 
-            se abra la pagina en un movil*/
-            inTextContendo.style.height = "auto"
-            inTextContendo.style.height = inText.scrollHeight + 'px';
-        }
         desencriptar(texto);
+        if(isMobileDevice()){
+            if(isMobileDevice()){
+                autoResize();
+            }
+        }
         cambiarOpacidad();
         var h3 = document.getElementById("mensaje-sin-texto");
         h3.remove();/*eliminamos texto flotante */
@@ -111,7 +106,10 @@ function isMobileDevice() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
   
-
+function autoResize(){
+    textarea1.style.height = "auto";
+    textarea1.style.height = textarea1.scrollHeight + "px";
+}
 function autoResizeTextarea() {
   inText.style.height = 'auto';
   inText.style.height = inText.scrollHeight + 'px';
@@ -124,9 +122,9 @@ function cambiarOpacidad() {
 /*/////////////////////////////////////////////////*/
 
 
-
 /*Aplicamos el autoresize*/
 if (isMobileDevice()) {
+
   inText.addEventListener('input', function() {
     autoResizeTextarea();
   });
