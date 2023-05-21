@@ -78,9 +78,7 @@ function clickdesencriptar(){
     else{
         desencriptar(texto);
         if(isMobileDevice()){
-            if(isMobileDevice()){
-                autoResize();
-            }
+            autoResize();
         }
         cambiarOpacidad();
         var h3 = document.getElementById("mensaje-sin-texto");
